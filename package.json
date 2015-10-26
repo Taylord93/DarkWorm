@@ -1,0 +1,15 @@
+{
+    "name": "devon.darkworm-theme",
+    "title": "DarkWorm Theme",
+    "description": "The DarkWorm theme is based off of the Earthworm theme for MacRabbits Espresso, but with a few tweaks.",
+    "homepage": "https://github.com/taylord93/urthworm",
+    "version": "1.0.0",
+    "author": "Devon Taylor <devon@komlite.com> (http://www.devon-taylor.com)",
+    "license": "MIT",
+    "theme": {
+        "file": "DarkWorm.css",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["theme"]
+}

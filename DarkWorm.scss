@@ -1,0 +1,178 @@
+/* Colors */
+
+$deep-black: rgb(25, 25, 25);
+$background: #272727;
+$mid-black: rgb(55, 55, 55);
+$gray: #767676;
+$bright-white: #fff;
+$foreground: #f6f3e8;
+$white: rgb(225, 225, 225);
+$highlight: rgb(150, 150, 150);
+
+$tan: #D6D7AF;
+$dark-tan: #544E44;
+
+$blue-green: #6FE0C2;
+
+$red: #EE0F04;
+$faded-red: rgb(175, 75, 75);
+
+$green: #abc837;
+$light-green: #CEDF99;
+$faded-green: #9F9D6D;
+
+$yellow: #DFC47D;
+$orange: #e8bf6a;
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: $background;
+    color: $foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: $dark-tan;
+}
+&.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 $deep-black;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: $deep-black;
+        color: $bright-white;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: $gray;
+    }
+}
+.cm-atom{
+    color: $green;
+}
+.cm-attribute{
+    color: $tan;
+}
+.cm-string{
+    color: $green;
+}
+.cm-def{
+    color: $blue-green;
+}
+.cm-hr {
+    color: #d68686;
+}
+.cm-number{
+    color: $blue-green;
+}
+.cm-operator{
+    color:$tan;
+}
+.cm-variable-2{
+    color: $red;
+}
+.cm-meta{
+    color: $tan;
+}
+.cm-variable, .cm-variable-3, .cm-bracket {
+    color: $tan;
+}
+.cm-comment {
+    color: $gray;
+}
+.cm-error, .cm-minus {
+    color: $faded-red;
+}
+.cm-header {
+    color: #d85896;
+}
+.cm-link {
+    color: #b77fdb;
+    text-decoration: none;
+}
+.cm-rangeinfo {
+    color: #6c71c4;
+}
+.cm-keyword{
+    color: $yellow;
+}
+.cm-builtin, .cm-quote {
+    color: $tan;
+}
+.cm-qualifier{
+    color: $light-green;
+}
+.cm-tag{
+    color: $red;
+}
+.cm-property {
+    color: $orange;
+}
+
+//======== CSS ========//
+
+.cm-m-css{
+
+    &.cm-property{
+        color: $orange;
+    }
+    &.cm-tag{
+        color: $yellow;
+    }
+    &.cm-variable-2{
+        color: $faded-red;
+    }
+}
+
+
+// Extra CSS //
+
+.CodeMirror.find-highlighting div.CodeMirror-selected, .CodeMirror .CodeMirror.find-highlighting div.CodeMirror-selected {
+    background: red;
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid $bright-white;
+}
+
+.CodeMirror-gutters {
+    background-color: $deep-black;
+    border-right: none;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: $white;
+}
+
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: $tan;
+    opacity: 0.1;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: none;
+    color: $blue-green;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid $bright-white;
+}
+
+
+
+.CodeMirror .CodeMirror-selected {
+    background: $highlight;
+}
+
+/* Non-editor styling */
+
+#image-holder, #not-editor {
+    background-color: $background;
+}
+
+#image-holder {
+    color: $foreground;
+}

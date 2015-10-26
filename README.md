@@ -1,2 +1,7 @@
-# URTHworm
-This is the repo for the URTHworm theme for the brackets code editor. This theme is based off of Earthworm for Espresso, but with a few color changes to enhance readability.
+DarkWorm for Brackets
+=========
+
+Based off of the Earthworm theme used in Espresso.
+
+For more themes and install instructions see the [Brackets Themes website](http://brackets-themes.github.io/)
+

@@ -1,0 +1,164 @@
+/* Colors */
+/* Code Styling */
+/* line 29, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror, .CodeMirror-scroll {
+  background-color: #272727;
+  color: #f6f3e8; }
+
+/* line 34, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-focused .CodeMirror-activeline-background {
+  background: #544E44; }
+
+/* line 37, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+  box-shadow: inset 15px 0 0 0 #191919; }
+
+/* line 42, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+  background: #191919;
+  color: #fff; }
+
+/* line 46, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
+  color: #767676; }
+
+/* line 50, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-atom {
+  color: #abc837; }
+
+/* line 53, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-attribute {
+  color: #D6D7AF; }
+
+/* line 56, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-string {
+  color: #abc837; }
+
+/* line 59, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-def {
+  color: #6FE0C2; }
+
+/* line 62, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-hr {
+  color: #d68686; }
+
+/* line 65, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-number {
+  color: #6FE0C2; }
+
+/* line 68, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-operator {
+  color: #D6D7AF; }
+
+/* line 71, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-variable-2 {
+  color: #EE0F04; }
+
+/* line 74, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-meta {
+  color: #D6D7AF; }
+
+/* line 77, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-variable, .cm-variable-3, .cm-bracket {
+  color: #D6D7AF; }
+
+/* line 80, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-comment {
+  color: #767676; }
+
+/* line 83, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-error, .cm-minus {
+  color: #af4b4b; }
+
+/* line 86, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-header {
+  color: #d85896; }
+
+/* line 89, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-link {
+  color: #b77fdb;
+  text-decoration: none; }
+
+/* line 93, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-rangeinfo {
+  color: #6c71c4; }
+
+/* line 96, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-keyword {
+  color: #DFC47D; }
+
+/* line 99, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-builtin, .cm-quote {
+  color: #D6D7AF; }
+
+/* line 102, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-qualifier {
+  color: #CEDF99; }
+
+/* line 105, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-tag {
+  color: #EE0F04; }
+
+/* line 108, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-property {
+  color: #e8bf6a; }
+
+/* line 116, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-m-css.cm-property {
+  color: #e8bf6a; }
+
+/* line 119, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-m-css.cm-tag {
+  color: #DFC47D; }
+
+/* line 122, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.cm-m-css.cm-variable-2 {
+  color: #af4b4b; }
+
+/* line 130, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror.find-highlighting div.CodeMirror-selected, .CodeMirror .CodeMirror.find-highlighting div.CodeMirror-selected {
+  background: red; }
+
+/* line 134, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-cursor {
+  border-left: 1px solid #fff; }
+
+/* line 138, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-gutters {
+  background-color: #191919;
+  border-right: none; }
+
+/* line 143, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+  color: #e1e1e1; }
+
+/* line 148, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-focused .CodeMirror-selected {
+  background: #D6D7AF;
+  opacity: 0.1; }
+
+/* line 153, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+  /* Ensure visibility against gray inline editor background */
+  background-color: none;
+  color: #6FE0C2; }
+
+/* line 159, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 1px solid #fff; }
+
+/* line 166, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+.CodeMirror .CodeMirror-selected {
+  background: #969696; }
+
+/* Non-editor styling */
+/* line 172, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+#image-holder, #not-editor {
+  background-color: #272727; }
+
+/* line 176, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/URTHworm-theme/DarkWorm.scss */
+#image-holder {
+  color: #f6f3e8; }
+
+/*# sourceMappingURL=DarkWorm.css.map */
