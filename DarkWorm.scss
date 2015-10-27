@@ -2,16 +2,29 @@
     @COLORS
 ======================================================================================*/
 
-//====== Mono ======//
-$black: #000;
-$deep-black: rgb(25, 25, 25);
-$background: #272727;
-$mid-black: rgb(55, 55, 55);
-$gray: #767676;
-$highlight: rgb(150, 150, 150);
-$white: rgb(225, 225, 225);
+//====== Enablers ======//
+$html-active-line-change: true;
+// Set to false to stop HTML/XML line color changes
+
+//====== Simple Editor Var Colors (background, gutters, cursor) ======//
+$background: #202020;
 $foreground: #f6f3e8;
-$bright-white: #fff;
+$gutter: #202020;
+$cursor: #fff;
+
+
+@function mono($input) {
+  @return rgb($input, $input, $input);
+}
+
+//====== Mono ======//
+$black: mono(0);
+$deep-black: mono(25);
+$mid-black: mono(55);
+$gray: mono(70);
+$highlight: mono(150);
+$white: mono(225);
+$bright-white: mono(255);
 
 //====== Browns ======//
 $tan: #D6D7AF;
@@ -24,6 +37,7 @@ $frost: rgb(195, 245, 255);
 //====== Reds ======//
 $red: #EE0F04;
 $faded-red: rgb(245, 100, 75);
+$error-red: rgb(150, 50, 50);
 
 //====== Greens ======//
 $green: #abc837;
@@ -40,119 +54,144 @@ $orange: #e8bf6a;
 ======================================================================================*/
 
 //====== General Editor ======//
-.CodeMirror, .CodeMirror-scroll {
+
+.CodeMirror{
     background-color: $background;
     color: $foreground;
-}
-.CodeMirror-focused {
-    .CodeMirror-activeline-background{
-        background: $dark-tan;
+    
+    &-gutters {
+        background-color: $gutter;
+        padding: 0px;
     }
-
-    .CodeMirror-activeline{
-
-        .CodeMirror-gutter-elt {
-            background: $deep-black;
-            color: $bright-white;
+    &-overwrite, &-cursor{
+        border-left: 1px solid $bright-white;
+        border-bottom: none;
+    }
+    &-scroll {
+        background-color: $background;
+        color: $foreground;
+    }
+    &-activeline-background{
+        color: $blue-green;
+        background: $blue-green;
+    }
+    &.find-highlighting{
+        div.CodeMirror-selected{
+             background: $red;
         }
-        .inline-widget .CodeMirror-gutter-elt {
-            color: $gray;
+    }
+    .CodeMirror{
+        &.find-highlighting{
+            .CodeMirror-selected{
+                background: $red;
+            }
+        }
+        &-selected {
+            background: $tan;
+            opacity: 0.1;
+        }
+        &-linenumbers{
+            color: $red;
+        }
+        &-matchingbracket{
+            color: $blue-green !important;
+            background: none;
+        }
+        &-matchingtag {
+            color: $blue-green;
+            background: $blue-green;
         }
     }
-    .CodeMirror-selected{
-        background: $tan;
-        opacity: 0.1;
+    &-focused {
+        .CodeMirror{
+            &-activeline-background{
+                background: $dark-tan;
+            }
+            &-activeline{
+                .CodeMirror-gutter-elt {
+                    background: $deep-black;
+                    color: $bright-white;
+                }
+                .inline-widget .CodeMirror-gutter-elt {
+                    color: $gray;
+                }
+            }
+            &-selected{
+                background: $tan;
+                opacity: 0.1;
+            }
+        }
     }
 }
 
-
-.CodeMirror.find-highlighting div.CodeMirror-selected, .CodeMirror .CodeMirror.find-highlighting div.CodeMirror-selected {
-    background: red;
-}
-.CodeMirror-cursor {
-    border-left: 1px solid $bright-white;
-}
-.CodeMirror-gutters {
-    background-color: $deep-black;
-    border-right: none;
-    margin-right: 10px;
-}
-.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
-    background-color: none;
-    color: $blue-green;
-}
-.CodeMirror-overwrite .CodeMirror-cursor {
-    border-left: none;
-    border-bottom: 1px solid $bright-white;
-}
-.CodeMirror .CodeMirror-selected {
-    background: $highlight;
-}
 
 //====== General Code ======//
-
-.cm-atom{
-    color: $green;
+.cm{
+    &-atom{
+        color: $green;
+    }
+    &-attribute{
+        color: $tan;
+    }
+    &-string{
+        color: $green;
+    }
+    &-def{
+        color: $blue-green;
+    }
+    &-hr {
+        color: #d68686;
+    }
+    &-number{
+        color: $blue-green;
+    }
+    &-operator{
+        color:$tan;
+    }
+    &-variable-2{
+        color: $red;
+    }
+    &-meta{
+        color: $tan;
+    }
+    &-variable, &-variable-3, &-bracket {
+        color: $tan;
+    }
+    &-comment {
+        color: $gray;
+    }
+    &-error{
+        color: $error-red;
+    }
+    &-minus {
+        color: $faded-red;
+    }
+    &-header {
+        color: #d85896;
+    }
+    &-link {
+        color: #b77fdb;
+        text-decoration: none;
+    }
+    &-rangeinfo {
+        color: #6c71c4;
+    }
+    &-keyword{
+        color: $yellow;
+    }
+    &-builtin, .cm-quote {
+        color: $tan;
+    }
+    &-qualifier{
+        color: $light-green;
+    }
+    &-tag{
+        color: $red;
+    }
+    &-property {
+        color: $orange;
+    }
 }
-.cm-attribute{
-    color: $tan;
-}
-.cm-string{
-    color: $green;
-}
-.cm-def{
-    color: $blue-green;
-}
-.cm-hr {
-    color: #d68686;
-}
-.cm-number{
-    color: $blue-green;
-}
-.cm-operator{
-    color:$tan;
-}
-.cm-variable-2{
-    color: $red;
-}
-.cm-meta{
-    color: $tan;
-}
-.cm-variable, .cm-variable-3, .cm-bracket {
-    color: $tan;
-}
-.cm-comment {
-    color: $gray;
-}
-.cm-error, .cm-minus {
-    color: $faded-red;
-}
-.cm-header {
-    color: #d85896;
-}
-.cm-link {
-    color: #b77fdb;
-    text-decoration: none;
-}
-.cm-rangeinfo {
-    color: #6c71c4;
-}
-.cm-keyword{
-    color: $yellow;
-}
-.cm-builtin, .cm-quote {
-    color: $tan;
-}
-.cm-qualifier{
-    color: $light-green;
-}
-.cm-tag{
-    color: $red;
-}
-.cm-property {
-    color: $orange;
-}
-
 //====== Non-Editor Styles ======//
 
 #image-holder, #not-editor {
@@ -168,82 +207,82 @@ $orange: #e8bf6a;
 ======================================================================================*/
 
 .cm-m-css{
-
-    &.cm-property{
-        color: $orange;
-    }
-    &.cm-tag{
-        color: $light-green;
-    }
-    &.cm-variable-2{
-        color: $faded-red;
-    }
-    &.cm-variable-3{
-        color: $blue-green;
-    }
-    &.cm-attribute{
-        color: $tan;
-    }
-    &.cm-string{
-        color: $green;
-    }
-    &.cm-def{
-        color: $blue-green;
-    }
-    &.cm-hr {
-        color: #d68686;
-    }
-    &.cm-number{
-        color: $green;
-    }
-    &.cm-attribute{
-        color: $black;
-    }
-    &.cm-operator{
-        color: $tan;
-    }
-    &.cm-meta{
-        color: $tan;
-    }
-    &.cm-variable {
-        color: $tan;
-    }
-    &.cm-bracket{
-        color: $tan;
-    }
-    &.cm-psuedo{
-        color: $blue-green;
-    }
-    &.cm-comment {
-        color: $gray;
-    }
-    &.cm-error{
-        color: $faded-red;
-    }
-    &.cm-minus {
-        color: $faded-red;
-    }
-    &.cm-header {
-        color: #d85896;
-    }
-    &.cm-link {
-        color: #b77fdb;
-        text-decoration: none;
-    }
-    &.cm-rangeinfo {
-        color: #6c71c4;
-    }
-    &.cm-keyword{
-        color: $yellow;
-    }
-    &.cm-builtin, .cm-quote {
-        color: $tan;
-    }
-    &.cm-qualifier{
-        color: $light-green;
+    &.cm{
+        &-property{
+            color: $orange;
+        }
+        &-tag{
+            color: $light-green;
+        }
+        &-variable{
+            color: $red;
+            &-2{
+                color: $faded-red;
+            }
+            &-3{
+                color: $blue-green;
+            }
+        }
+        &-attribute{
+            color: $tan;
+        }
+        &-string{
+            color: $green;
+        }
+        &-def{
+            color: $blue-green;
+        }
+        &-hr {
+            color: #d68686;
+        }
+        &-number{
+            color: $green;
+        }
+        &-attribute{
+            color: $black;
+        }
+        &-operator{
+            color: $blue-green;
+        }
+        &-meta{
+            color: $tan;
+        }
+        &-bracket{
+            color: $tan;
+        }
+        &-psuedo{
+            color: $blue-green;
+        }
+        &-comment{
+            color: $gray;
+        }
+        &-minus {
+            color: $faded-red;
+        }
+        &-header {
+            color: #d85896;
+        }
+        &-link {
+            color: #b77fdb;
+            text-decoration: none;
+        }
+        &-rangeinfo {
+            color: #6c71c4;
+        }
+        &-keyword{
+            color: $yellow;
+        }
+        &-builtin{
+            color: $light-green;
+        }
+        &-quote {
+            color: $tan;
+        }
+        &-qualifier{
+            color: $light-green;
+        }
     }
 } // End CSS
-
 
 /*======================================================================================
     @JavaScript
@@ -260,7 +299,101 @@ $orange: #e8bf6a;
 ======================================================================================*/
 
 .cm-m-xml{
-
+    &.cm{
+        &-property{
+            color: $yellow;
+        }
+        &-tag{
+            color: $orange;
+        }
+        &-variable{
+            color: $tan;
+            &-2{
+                color: $faded-red;
+            }
+            &-3{
+                color: $blue-green;
+            }
+        }
+        &-attribute{
+            color: $tan;
+        }
+        &-string{
+            color: $green;
+        }
+        &-def{
+            color: $blue-green;
+        }
+        &-hr {
+            color: #d68686;
+        }
+        &-number{
+            color: $green;
+        }
+        &-attribute{
+            color: $orange;
+        }
+        &-operator{
+            color: $blue-green;
+        }
+        &-meta{
+            color: mono(100);
+        }
+        &-bracket{
+            color: $tan;
+        }
+        &-comment{
+            color: $gray;
+        }
+        &-minus {
+            color: $faded-red;
+        }
+        &-header {
+            color: #d85896;
+        }
+        &-link {
+            color: #b77fdb;
+            text-decoration: none;
+        }
+        &-rangeinfo {
+            color: #6c71c4;
+        }
+        &-keyword{
+            color: $tan;
+        }
+        &-builtin{
+            color: $light-green;
+        }
+        &-quote {
+            color: $tan;
+        }
+        &-qualifier{
+            color: $light-green;
+        }
+    }
+    
+    @if $html-active-line-change {
+        &.CodeMirror{
+            &-matchingtag {
+                background: none;
+                &.cm{
+                    &-tag{
+                        color: $red;
+                    }
+                    &-keyword{
+                        color: $blue-green;
+                    }
+                    &-attribute{
+                        color: $blue-green;
+                    }
+                    &-string{
+                        color: $light-green;
+                    }
+                }
+                
+            }
+        }
+    }
 
 }// End XML/HTML
 
