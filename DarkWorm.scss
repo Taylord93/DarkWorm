@@ -1,21 +1,53 @@
-/*======================================================================================
-    @COLORS
-======================================================================================*/
+//========================================================================
+//========================================================================
+//  Settings
+//  Values are true/false
+//========================================================================
+//========================================================================
 
-//====== Enablers ======//
 $html-active-line-change: true;
-// Set to false to stop HTML/XML line color changes
+// HTML Line Color Changing
+$conform-style-script-tags: true;
+// Conform internal/inline <script> and <style> tags within HTML
+$style-vendor-prefix: true;
+// Set Vendor Prefixes to a different color
+$split-vendor-prefix: true;
 
-//====== Simple Editor Var Colors (background, gutters, cursor) ======//
-$background: #202020;
+
+
+
+//========================================================================
+//========================================================================
+//  Editor Colors
+//========================================================================
+//========================================================================
+
+$background: #222222;
 $foreground: #f6f3e8;
 $gutter: #202020;
 $cursor: #fff;
 
 
+
+
+//========================================================================
+//========================================================================
+//  Functions
+//========================================================================
+//========================================================================
+
 @function mono($input) {
-  @return rgb($input, $input, $input);
+    @return rgb($input, $input, $input);
 }
+
+
+
+
+//========================================================================
+//========================================================================
+//  Colors
+//========================================================================
+//========================================================================
 
 //====== Mono ======//
 $black: mono(0);
@@ -49,22 +81,28 @@ $yellow: #DFC47D;
 $orange: #e8bf6a;
 
 
-/*======================================================================================
-   @GENERAL
-======================================================================================*/
+//========================================================================
+//========================================================================
+//  Styling
+//========================================================================
+//========================================================================
 
-//====== General Editor ======//
+//====================================
+//  General
+//====================================
+
+//==========// General Editor //==========//
 
 .CodeMirror{
     background-color: $background;
     color: $foreground;
-    
+
     &-gutters {
         background-color: $gutter;
         padding: 0px;
     }
     &-overwrite, &-cursor{
-        border-left: 1px solid $bright-white;
+        border-left: 1.5px solid $cursor;
         border-bottom: none;
     }
     &-scroll {
@@ -125,7 +163,8 @@ $orange: #e8bf6a;
 }
 
 
-//====== General Code ======//
+//==========// General Code //==========//
+
 .cm{
     &-atom{
         color: $green;
@@ -167,7 +206,7 @@ $orange: #e8bf6a;
         color: $faded-red;
     }
     &-header {
-        color: #d85896;
+        color: $red;
     }
     &-link {
         color: #b77fdb;
@@ -192,7 +231,8 @@ $orange: #e8bf6a;
         color: $orange;
     }
 }
-//====== Non-Editor Styles ======//
+
+//==========// Non-Editor Styling //==========//
 
 #image-holder, #not-editor {
     background-color: $background;
@@ -202,91 +242,104 @@ $orange: #e8bf6a;
 }
 
 
-/*======================================================================================
-    @CSS
-======================================================================================*/
+$css-selectors: $light-green;
+// .my-element, #myElement, div
+$css-psuedo-elements: $blue-green;
+// :hover
+$css-important-tags: $red;
+// ||:|| !important;
+$css-properties: $orange;
+// background: || ;
+$css-values: $green;
+// ||: rgb(0, 0, 0);
+$css-vendor-prefix: $tan;
+// -webkit-border-radius
+// Check /scss/user-settings for options
+$css-variable-properties: $faded-red;
+// Verdana, Arial, etc.
+$css-at-rules: $blue-green;
+// @media screen -AND- @if, @for for Sass/Less
+$css-strings: $green;
+// "in between quotes"
+$css-integers: $green;
+// 1, 2, 3, 4
+$css-comments: $gray;
+// This is a comment!
+$sass-variables: $faded-red;
+// $mycolor: ||;
+$sass-operators: $blue-green;
+// + - / = % ^
+
+//====================================
+//    CSS
+//====================================
 
 .cm-m-css{
     &.cm{
-        &-property{
-            color: $orange;
+        &-atom{
+            color: $css-values;
         }
-        &-tag{
-            color: $light-green;
+        &-property{
+            color: $css-properties;
+        }
+        &-tag, &-builtin, &-qualifier{
+            color: $css-selectors;
         }
         &-variable{
-            color: $red;
+            color: $css-variable-properties;
             &-2{
-                color: $faded-red;
+                color: $sass-variables;
             }
             &-3{
-                color: $blue-green;
+                color: $css-psuedo-elements;
             }
         }
-        &-attribute{
-            color: $tan;
-        }
         &-string{
-            color: $green;
+            color: $css-strings;
         }
         &-def{
-            color: $blue-green;
-        }
-        &-hr {
-            color: #d68686;
+            color: $css-at-rules;
         }
         &-number{
-            color: $green;
-        }
-        &-attribute{
-            color: $black;
+            color: $css-integers;
         }
         &-operator{
-            color: $blue-green;
-        }
-        &-meta{
-            color: $tan;
-        }
-        &-bracket{
-            color: $tan;
-        }
-        &-psuedo{
-            color: $blue-green;
+            color: $sass-operators;
         }
         &-comment{
-            color: $gray;
-        }
-        &-minus {
-            color: $faded-red;
-        }
-        &-header {
-            color: #d85896;
-        }
-        &-link {
-            color: #b77fdb;
-            text-decoration: none;
-        }
-        &-rangeinfo {
-            color: #6c71c4;
+            color: $css-comments;
         }
         &-keyword{
-            color: $yellow;
+            color: $css-important-tags;
+            font-weight: bolder;
         }
-        &-builtin{
-            color: $light-green;
-        }
-        &-quote {
-            color: $tan;
-        }
-        &-qualifier{
-            color: $light-green;
+        @if $style-vendor-prefix {
+            @if $split-vendor-prefix{
+                &-meta{
+                    color: $css-vendor-prefix;
+                }
+                &-meta + &-variable, &-meta + &-property, &-meta + &-atom{
+                    color: $css-properties;
+                }
+            }@else{
+                &-meta, &-meta + &-variable, &-meta + &-property, &-meta + &-atom{
+                    color: $css-vendor-prefix;
+                }
+            }
+        } @else {
+            &-meta{
+                color: $css-properties;
+            }
         }
     }
 } // End CSS
 
-/*======================================================================================
-    @JavaScript
-======================================================================================*/
+
+
+
+//====================================
+//    JavaScript
+//====================================
 
 .cm-m-javascript{
 
@@ -294,9 +347,11 @@ $orange: #e8bf6a;
 }// End JavaScript
 
 
-/*======================================================================================
-    @XML/HTML
-======================================================================================*/
+
+
+//====================================
+//    XML/HTML
+//====================================
 
 .cm-m-xml{
     &.cm{
@@ -371,26 +426,26 @@ $orange: #e8bf6a;
             color: $light-green;
         }
     }
-    
+
     @if $html-active-line-change {
         &.CodeMirror{
             &-matchingtag {
                 background: none;
                 &.cm{
                     &-tag{
-                        color: $red;
+                        color: $white;
                     }
                     &-keyword{
-                        color: $blue-green;
+                        color: $white;
                     }
                     &-attribute{
-                        color: $blue-green;
+                        color: $tan;
                     }
                     &-string{
                         color: $light-green;
                     }
                 }
-                
+
             }
         }
     }
@@ -398,11 +453,90 @@ $orange: #e8bf6a;
 }// End XML/HTML
 
 
-/*======================================================================================
-    @PHP/C-Like
-======================================================================================*/
+
+
+//====================================
+//    PHP / C-Like Languages
+//====================================
+
 .cm-m-clike{
 
-
+    &-atom{
+        color: $green;
+    }
+    &-property{
+        color: $orange;
+    }
+    &-tag{
+        color: $light-green;
+    }
+    &-variable{
+        color: $faded-red;
+        &-2{
+            color: $faded-red;
+        }
+        &-3{
+            color: $blue-green;
+        }
+    }
+    &-attribute{
+        color: $tan;
+    }
+    &-string{
+        color: $green;
+    }
+    &-def{
+        color: $blue-green;
+    }
+    &-def + &-property{
+        color: $white;
+    }
+    &-hr {
+        color: #d68686;
+    }
+    &-number{
+        color: $green;
+    }
+    &-attribute{
+        color: $black;
+    }
+    &-operator{
+        color: $blue-green;
+    }
+    &-bracket{
+        color: $tan;
+    }
+    &-psuedo{
+        color: $blue-green;
+    }
+    &-comment{
+        color: $gray;
+    }
+    &-minus {
+        color: $faded-red;
+    }
+    &-header {
+        color: #d85896;
+    }
+    &-link {
+        color: #b77fdb;
+        text-decoration: none;
+    }
+    &-rangeinfo {
+        color: #6c71c4;
+    }
+    &-keyword{
+        color: $blue-green;
+        font-weight: boler;
+    }
+    &-builtin{
+        color: $light-green;
+    }
+    &-quote {
+        color: $tan;
+    }
+    &-qualifier{
+        color: $light-green;
+    }
 }
 

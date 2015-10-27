@@ -1,0 +1,91 @@
+//==========// Editor //==========//
+
+.CodeMirror{
+    background-color: $background;
+    color: $foreground;
+
+    &-gutters {
+        background-color: $gutter;
+        padding: 0px;
+    }
+    &-overwrite, &-cursor{
+        border-left: 1.5px solid $cursor;
+        border-bottom: none;
+    }
+    &-scroll {
+        background-color: $background;
+        color: $foreground;
+    }
+    &-activeline-background{
+        color: $blue-green;
+        background: $blue-green;
+    }
+    &.find-highlighting{
+        div.CodeMirror-selected{
+            background: $red;
+        }
+    }
+    .CodeMirror{
+        &.find-highlighting{
+            .CodeMirror-selected{
+                background: $red;
+            }
+        }
+        &-selected {
+            background: $tan;
+            opacity: 0.1;
+        }
+        &-linenumbers{
+            color: $red;
+        }
+        &-matchingbracket{
+            color: $blue-green !important;
+            background: none;
+        }
+        &-matchingtag {
+            color: $blue-green;
+            background: $blue-green;
+        }
+    }
+    &-focused {
+        .CodeMirror{
+            &-activeline-background{
+                background: $dark-tan;
+            }
+            &-activeline{
+                .CodeMirror-gutter-elt {
+                    background: $deep-black;
+                    color: $bright-white;
+                }
+                .inline-widget .CodeMirror-gutter-elt {
+                    color: $gray;
+                }
+            }
+            &-selected{
+                background: $tan;
+                opacity: 0.1;
+            }
+        }
+    }
+}
+
+
+//==========// General Code //==========//
+
+
+//==========// Non-Editor Styling //==========//
+
+#image-holder, #not-editor {
+    background-color: $background;
+}
+#image-holder {
+    color: $foreground;
+}
+
+
+
+@import "lang/base";
+@import "lang/html";
+@import "lang/css";
+@import "lang/js";
+@import "lang/php";

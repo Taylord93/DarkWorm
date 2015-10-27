@@ -1,0 +1,59 @@
+.cm-m-css{
+    &.cm{
+        &-atom{
+            color: $css-values;
+        }
+        &-property{
+            color: $css-properties;
+        }
+        &-tag, &-builtin, &-qualifier{
+            color: $css-selectors;
+        }
+        &-variable{
+            color: $css-variable-properties;
+            &-2{
+                color: $sass-variables;
+            }
+            &-3{
+                color: $css-psuedo-elements;
+            }
+        }
+        &-string{
+            color: $css-strings;
+        }
+        &-def{
+            color: $css-at-rules;
+        }
+        &-number{
+            color: $css-integers;
+        }
+        &-operator{
+            color: $sass-operators;
+        }
+        &-comment{
+            color: $css-comments;
+        }
+        &-keyword{
+            color: $css-important-tags;
+            font-weight: bolder;
+        }
+        @if $style-vendor-prefix {
+            @if $split-vendor-prefix{
+                &-meta{
+                    color: $css-vendor-prefix;
+                }
+                &-meta + &-variable, &-meta + &-property, &-meta + &-atom{
+                    color: $css-properties;
+                }
+            }@else{
+                &-meta, &-meta + &-variable, &-meta + &-property, &-meta + &-atom{
+                    color: $css-vendor-prefix;
+                }
+            }
+        } @else {
+            &-meta{
+                color: $css-properties;
+            }
+        }
+    }
+} // End CSS

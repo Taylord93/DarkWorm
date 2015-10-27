@@ -1,0 +1,3 @@
+@function mono($input) {
+    @return rgb($input, $input, $input);
+}

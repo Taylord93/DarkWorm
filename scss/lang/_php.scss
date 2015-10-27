@@ -1,0 +1,85 @@
+//====================================
+//    PHP / C-Like Languages
+//====================================
+
+.cm-m-clike{
+    &.cm{
+        &-atom{
+            color: $green;
+        }
+        &-property{
+            color: $orange;
+        }
+        &-tag{
+            color: $light-green;
+        }
+        &-variable{
+            color: $faded-red;
+            &-2{
+                color: $faded-red;
+            }
+            &-3{
+                color: $blue-green;
+            }
+        }
+        &-attribute{
+            color: $tan;
+        }
+        &-string{
+            color: $green;
+        }
+        &-def{
+            color: $blue-green;
+        }
+        &-def + &-property{
+            color: $white;
+        }
+        &-hr {
+            color: #d68686;
+        }
+        &-number{
+            color: $green;
+        }
+        &-attribute{
+            color: $black;
+        }
+        &-operator{
+            color: $blue-green;
+        }
+        &-bracket{
+            color: $tan;
+        }
+        &-psuedo{
+            color: $blue-green;
+        }
+        &-comment{
+            color: $gray;
+        }
+        &-minus {
+            color: $faded-red;
+        }
+        &-header {
+            color: #d85896;
+        }
+        &-link {
+            color: #b77fdb;
+            text-decoration: none;
+        }
+        &-rangeinfo {
+            color: #6c71c4;
+        }
+        &-keyword{
+            color: $blue-green;
+            font-weight: bolder;
+        }
+        &-builtin{
+            color: $light-green;
+        }
+        &-quote {
+            color: $tan;
+        }
+        &-qualifier{
+            color: $light-green;
+        }
+    }
+}

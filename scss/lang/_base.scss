@@ -1,0 +1,66 @@
+.cm{
+    &-atom{
+        color: $green;
+    }
+    &-attribute{
+        color: $tan;
+    }
+    &-string{
+        color: $green;
+    }
+    &-def{
+        color: $blue-green;
+    }
+    &-hr {
+        color: #d68686;
+    }
+    &-number{
+        color: $blue-green;
+    }
+    &-operator{
+        color:$tan;
+    }
+    &-variable-2{
+        color: $red;
+    }
+    &-meta{
+        color: $tan;
+    }
+    &-variable, &-variable-3, &-bracket {
+        color: $tan;
+    }
+    &-comment {
+        color: $gray;
+    }
+    &-error{
+        color: $error-red;
+    }
+    &-minus {
+        color: $faded-red;
+    }
+    &-header {
+        color: $red;
+    }
+    &-link {
+        color: #b77fdb;
+        text-decoration: none;
+    }
+    &-rangeinfo {
+        color: #6c71c4;
+    }
+    &-keyword{
+        color: $yellow;
+    }
+    &-builtin, .cm-quote {
+        color: $tan;
+    }
+    &-qualifier{
+        color: $light-green;
+    }
+    &-tag{
+        color: $red;
+    }
+    &-property {
+        color: $orange;
+    }
+}

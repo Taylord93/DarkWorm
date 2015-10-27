@@ -1,371 +1,412 @@
-/*======================================================================================
-    @COLORS
-======================================================================================*/
-/*======================================================================================
-   @GENERAL
-======================================================================================*/
-/* line 58, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 96, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .CodeMirror {
-  background-color: #202020;
+  background-color: #222222;
   color: #f6f3e8; }
-  /* line 62, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 100, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-gutters {
     background-color: #202020;
     padding: 0px; }
-  /* line 66, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 104, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-overwrite, .CodeMirror-cursor {
-    border-left: 1px solid white;
+    border-left: 1.5px solid #fff;
     border-bottom: none; }
-  /* line 70, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 108, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-scroll {
-    background-color: #202020;
+    background-color: #222222;
     color: #f6f3e8; }
-  /* line 74, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 112, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-activeline-background {
     color: #6FE0C2;
     background: #6FE0C2; }
-  /* line 79, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 117, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror.find-highlighting div.CodeMirror-selected {
     background: #EE0F04; }
-  /* line 85, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 123, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror .CodeMirror.find-highlighting .CodeMirror-selected {
     background: #EE0F04; }
-  /* line 89, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 127, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror .CodeMirror-selected {
     background: #D6D7AF;
     opacity: 0.1; }
-  /* line 93, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 131, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror .CodeMirror-linenumbers {
     color: #EE0F04; }
-  /* line 96, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 134, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror .CodeMirror-matchingbracket {
     color: #6FE0C2 !important;
     background: none; }
-  /* line 100, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 138, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror .CodeMirror-matchingtag {
     color: #6FE0C2;
     background: #6FE0C2; }
-  /* line 107, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 145, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-focused .CodeMirror-activeline-background {
     background: #544E44; }
-  /* line 111, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 149, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
     background: #191919;
     color: white; }
-  /* line 115, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 153, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
     color: #464646; }
-  /* line 119, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 157, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .CodeMirror-focused .CodeMirror-selected {
     background: #D6D7AF;
     opacity: 0.1; }
 
-/* line 130, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 169, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-atom {
   color: #abc837; }
 
-/* line 133, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 172, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-attribute {
   color: #D6D7AF; }
 
-/* line 136, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 175, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-string {
   color: #abc837; }
 
-/* line 139, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 178, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-def {
   color: #6FE0C2; }
 
-/* line 142, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 181, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-hr {
   color: #d68686; }
 
-/* line 145, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 184, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-number {
   color: #6FE0C2; }
 
-/* line 148, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 187, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-operator {
   color: #D6D7AF; }
 
-/* line 151, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 190, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-variable-2 {
   color: #EE0F04; }
 
-/* line 154, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 193, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-meta {
   color: #D6D7AF; }
 
-/* line 157, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 196, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-variable, .cm-variable-3, .cm-bracket {
   color: #D6D7AF; }
 
-/* line 160, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 199, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-comment {
   color: #464646; }
 
-/* line 163, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 202, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-error {
   color: #963232; }
 
-/* line 166, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 205, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-minus {
   color: #f5644b; }
 
-/* line 169, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 208, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-header {
-  color: #d85896; }
+  color: #EE0F04; }
 
-/* line 172, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 211, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-link {
   color: #b77fdb;
   text-decoration: none; }
 
-/* line 176, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 215, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-rangeinfo {
   color: #6c71c4; }
 
-/* line 179, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 218, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-keyword {
   color: #DFC47D; }
 
-/* line 182, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 221, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-builtin, .cm .cm-quote {
   color: #D6D7AF; }
 
-/* line 185, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 224, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-qualifier {
   color: #CEDF99; }
 
-/* line 188, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 227, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-tag {
   color: #EE0F04; }
 
-/* line 191, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 230, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-property {
   color: #e8bf6a; }
 
-/* line 197, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 237, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 #image-holder, #not-editor {
-  background-color: #202020; }
+  background-color: #222222; }
 
-/* line 200, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 240, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 #image-holder {
   color: #f6f3e8; }
 
-/*======================================================================================
-    @CSS
-======================================================================================*/
-/* line 211, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 279, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-css.cm-atom {
+  color: #abc837; }
+
+/* line 282, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-property {
   color: #e8bf6a; }
 
-/* line 214, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-tag {
+/* line 285, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-css.cm-tag, .cm-m-css.cm-builtin, .cm-m-css.cm-qualifier {
   color: #CEDF99; }
 
-/* line 217, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 288, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-variable {
-  color: #EE0F04; }
-  /* line 219, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  color: #f5644b; }
+  /* line 290, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-css.cm-variable-2 {
     color: #f5644b; }
-  /* line 222, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 293, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-css.cm-variable-3 {
     color: #6FE0C2; }
 
-/* line 226, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-attribute {
-  color: #D6D7AF; }
-
-/* line 229, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 297, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-string {
   color: #abc837; }
 
-/* line 232, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 300, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-def {
   color: #6FE0C2; }
 
-/* line 235, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-hr {
-  color: #d68686; }
-
-/* line 238, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 303, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-number {
   color: #abc837; }
 
-/* line 241, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-attribute {
-  color: black; }
-
-/* line 244, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 306, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-operator {
   color: #6FE0C2; }
 
-/* line 247, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-meta {
-  color: #D6D7AF; }
-
-/* line 250, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-bracket {
-  color: #D6D7AF; }
-
-/* line 253, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-psuedo {
-  color: #6FE0C2; }
-
-/* line 256, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 309, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-comment {
   color: #464646; }
 
-/* line 259, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-minus {
-  color: #f5644b; }
-
-/* line 262, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-header {
-  color: #d85896; }
-
-/* line 265, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-link {
-  color: #b77fdb;
-  text-decoration: none; }
-
-/* line 269, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-rangeinfo {
-  color: #6c71c4; }
-
-/* line 272, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 312, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-css.cm-keyword {
-  color: #DFC47D; }
+  color: #EE0F04;
+  font-weight: bolder; }
 
-/* line 275, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-builtin {
-  color: #CEDF99; }
-
-/* line 278, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-quote {
+/* line 318, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-css.cm-meta {
   color: #D6D7AF; }
 
-/* line 281, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
-.cm-m-css.cm-qualifier {
-  color: #CEDF99; }
+/* line 321, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-css.cm-meta + .cm-m-css.cm-variable, .cm-m-css.cm-meta + .cm-m-css.cm-property, .cm-m-css.cm-meta + .cm-m-css.cm-atom {
+  color: #e8bf6a; }
 
-/*======================================================================================
-    @JavaScript
-======================================================================================*/
-/*======================================================================================
-    @XML/HTML
-======================================================================================*/
-/* line 303, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 358, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-property {
   color: #DFC47D; }
 
-/* line 306, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 361, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-tag {
   color: #e8bf6a; }
 
-/* line 309, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 364, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-variable {
   color: #D6D7AF; }
-  /* line 311, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 366, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-xml.cm-variable-2 {
     color: #f5644b; }
-  /* line 314, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 369, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-xml.cm-variable-3 {
     color: #6FE0C2; }
 
-/* line 318, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 373, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-attribute {
   color: #D6D7AF; }
 
-/* line 321, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 376, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-string {
   color: #abc837; }
 
-/* line 324, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 379, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-def {
   color: #6FE0C2; }
 
-/* line 327, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 382, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-hr {
   color: #d68686; }
 
-/* line 330, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 385, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-number {
   color: #abc837; }
 
-/* line 333, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 388, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-attribute {
   color: #e8bf6a; }
 
-/* line 336, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 391, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-operator {
   color: #6FE0C2; }
 
-/* line 339, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 394, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-meta {
   color: #646464; }
 
-/* line 342, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 397, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-bracket {
   color: #D6D7AF; }
 
-/* line 345, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 400, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-comment {
   color: #464646; }
 
-/* line 348, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 403, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-minus {
   color: #f5644b; }
 
-/* line 351, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 406, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-header {
   color: #d85896; }
 
-/* line 354, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 409, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-link {
   color: #b77fdb;
   text-decoration: none; }
 
-/* line 358, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 413, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-rangeinfo {
   color: #6c71c4; }
 
-/* line 361, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 416, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-keyword {
   color: #D6D7AF; }
 
-/* line 364, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 419, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-builtin {
   color: #CEDF99; }
 
-/* line 367, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 422, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-quote {
   color: #D6D7AF; }
 
-/* line 370, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 425, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.cm-qualifier {
   color: #CEDF99; }
 
-/* line 377, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+/* line 432, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
 .cm-m-xml.CodeMirror-matchingtag {
   background: none; }
-  /* line 380, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+  /* line 435, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-xml.CodeMirror-matchingtag.cm-tag {
-    color: #EE0F04; }
-  /* line 383, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+    color: #e1e1e1; }
+  /* line 438, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-xml.CodeMirror-matchingtag.cm-keyword {
-    color: #6FE0C2; }
-  /* line 386, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+    color: #e1e1e1; }
+  /* line 441, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-xml.CodeMirror-matchingtag.cm-attribute {
-    color: #6FE0C2; }
-  /* line 389, /Users/DevonTaylor/Library/Application Support/Brackets/extensions/user/DarkWorm/DarkWorm.scss */
+    color: #D6D7AF; }
+  /* line 444, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
   .cm-m-xml.CodeMirror-matchingtag.cm-string {
     color: #CEDF99; }
 
-/*======================================================================================
-    @PHP/C-Like
-======================================================================================*/
+/* line 464, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-atom {
+  color: #abc837; }
+
+/* line 467, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-property {
+  color: #e8bf6a; }
+
+/* line 470, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-tag {
+  color: #CEDF99; }
+
+/* line 473, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-variable {
+  color: #f5644b; }
+  /* line 475, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+  .cm-m-clike-variable-2 {
+    color: #f5644b; }
+  /* line 478, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+  .cm-m-clike-variable-3 {
+    color: #6FE0C2; }
+
+/* line 482, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-attribute {
+  color: #D6D7AF; }
+
+/* line 485, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-string {
+  color: #abc837; }
+
+/* line 488, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-def {
+  color: #6FE0C2; }
+
+/* line 491, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-def + .cm-m-clike-property {
+  color: #e1e1e1; }
+
+/* line 494, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-hr {
+  color: #d68686; }
+
+/* line 497, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-number {
+  color: #abc837; }
+
+/* line 500, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-attribute {
+  color: black; }
+
+/* line 503, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-operator {
+  color: #6FE0C2; }
+
+/* line 506, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-bracket {
+  color: #D6D7AF; }
+
+/* line 509, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-psuedo {
+  color: #6FE0C2; }
+
+/* line 512, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-comment {
+  color: #464646; }
+
+/* line 515, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-minus {
+  color: #f5644b; }
+
+/* line 518, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-header {
+  color: #d85896; }
+
+/* line 521, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-link {
+  color: #b77fdb;
+  text-decoration: none; }
+
+/* line 525, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-rangeinfo {
+  color: #6c71c4; }
+
+/* line 528, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-keyword {
+  color: #6FE0C2;
+  font-weight: boler; }
+
+/* line 532, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-builtin {
+  color: #CEDF99; }
+
+/* line 535, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-quote {
+  color: #D6D7AF; }
+
+/* line 538, /Users/DTaylo02/Library/Application Support/Brackets/extensions/user/DarkWorm-theme/DarkWorm.scss */
+.cm-m-clike-qualifier {
+  color: #CEDF99; }
 
 /*# sourceMappingURL=DarkWorm.css.map */

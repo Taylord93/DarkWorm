@@ -1,0 +1,102 @@
+//====================================
+//    XML/HTML
+//====================================
+
+.cm-m-xml{
+    &.cm{
+        &-property{
+            color: $yellow;
+        }
+        &-tag{
+            color: $orange;
+        }
+        &-variable{
+            color: $tan;
+            &-2{
+                color: $faded-red;
+            }
+            &-3{
+                color: $blue-green;
+            }
+        }
+        &-attribute{
+            color: $tan;
+        }
+        &-string{
+            color: $green;
+        }
+        &-def{
+            color: $blue-green;
+        }
+        &-hr {
+            color: #d68686;
+        }
+        &-number{
+            color: $green;
+        }
+        &-attribute{
+            color: $orange;
+        }
+        &-operator{
+            color: $blue-green;
+        }
+        &-meta{
+            color: mono(100);
+        }
+        &-bracket{
+            color: $tan;
+        }
+        &-comment{
+            color: $gray;
+        }
+        &-minus {
+            color: $faded-red;
+        }
+        &-header {
+            color: #d85896;
+        }
+        &-link {
+            color: #b77fdb;
+            text-decoration: none;
+        }
+        &-rangeinfo {
+            color: #6c71c4;
+        }
+        &-keyword{
+            color: $tan;
+        }
+        &-builtin{
+            color: $light-green;
+        }
+        &-quote {
+            color: $tan;
+        }
+        &-qualifier{
+            color: $light-green;
+        }
+    }
+
+    @if $html-active-line-change {
+        &.CodeMirror{
+            &-matchingtag {
+                background: none;
+                &.cm{
+                    &-tag{
+                        color: $white;
+                    }
+                    &-keyword{
+                        color: $white;
+                    }
+                    &-attribute{
+                        color: $tan;
+                    }
+                    &-string{
+                        color: $light-green;
+                    }
+                }
+
+            }
+        }
+    }
+
+}// End XML/HTML
