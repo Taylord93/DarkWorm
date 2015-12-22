@@ -1,94 +1,46 @@
-//========================================================================
-//========================================================================
-//  Color Pallete
-//========================================================================
-//========================================================================
+$black: mono(0) !default;
+$deep-black: mono(25) !default;
+$mid-black: mono(55) !default;
+$gray: mono(70) !default;
+$highlight: mono(150) !default;
+$white: mono(225) !default;
+$bright-white: mono(255) !default;
+$off-white: #f6f3e8 !default;
 
-//====== Mono ======//
-$black: mono(0);
-$deep-black: mono(25);
-$mid-black: mono(55);
-$gray: mono(70);
-$highlight: mono(150);
-$white: mono(225);
-$bright-white: mono(255);
-$off-white: #f6f3e8;
+$tan: #D6D7AF !default;
+$dark-tan: #544E44 !default;
 
-//====== Browns ======//
-$tan: #D6D7AF;
-$dark-tan: #544E44;
+$blue-green: #6FE0C2 !default;
+$frost: rgb(195, 245, 255) !default;
 
-//====== Blues ======//
-$blue-green: #6FE0C2;
-$frost: rgb(195, 245, 255);
+$red: #EE0F04 !default;
+$faded-red: rgb(245, 100, 75) !default;
+$error-red: rgb(150, 50, 50) !default;
 
-//====== Reds ======//
-$red: #EE0F04;
-$faded-red: rgb(245, 100, 75);
-$error-red: rgb(150, 50, 50);
+$green: #abc837 !default;
+$light-green: #CEDF99 !default;
+$faded-green: #9F9D6D !default;
 
-//====== Greens ======//
-$green: #abc837;
-$light-green: #CEDF99;
-$faded-green: #9F9D6D;
-
-//====== Yellows ======//
-$yellow: #DFC47D;
-$orange: #e8bf6a;
+$yellow: #DFC47D !default;
+$orange: #e8bf6a !default;
 
 
+$background: mono(22) !default;
+$foreground: $off-white !default;
+$gutter: mono(20) !default;
+$cursor: $bright-white !default;
 
 
-//========================================================================
-//========================================================================
-//  Color Settings
-//========================================================================
-//========================================================================
-
-//=====================================//
-//    General / Editor
-//=====================================//
-
-$background: mono(22);
-$foreground: $off-white;
-$gutter: mono(20);
-$cursor: $bright-white;
-
-//=====================================//
-//    Generic
-//    (will be overridden for specific languages below)
-//=====================================//
-
-$css-selectors: $light-green;
-
-//=====================================//
-//    CSS
-//=====================================//
-
-$css-selectors: $light-green;
-// .my-element, #myElement, div
-$css-psuedo-elements: $blue-green;
-// :hover
-$css-important-tags: $red;
-// ||:|| !important;
-$css-properties: $orange;
-// background: || ;
-$css-values: $green;
-// ||: rgb(0, 0, 0);
-$css-vendor-prefix: $tan;
-// -webkit-border-radius
-// Check /scss/user-settings for options
-$css-variable-properties: $faded-red;
-// Verdana, Arial, etc.
-$css-at-rules: $blue-green;
-// @media screen -AND- @if, @for for Sass/Less
-$css-strings: $green;
-// "in between quotes"
-$css-integers: $green;
-// 1, 2, 3, 4
-$css-comments: $gray;
-// This is a comment!
-$sass-variables: $faded-red;
-// $mycolor: ||;
-$sass-operators: $blue-green;
-// + - / = % ^
+$css-selectors: $light-green !default;
+$css-psuedo-elements: $blue-green !default;
+$css-important-tags: $red !default;
+$css-properties: $orange !default;
+$css-values: $green !default;
+$css-vendor-prefix: $tan !default;
+$css-variable-properties: $faded-red !default;
+$css-at-rules: $blue-green !default;
+$css-strings: $green !default;
+$css-integers: $green !default;
+$css-comments: $gray !default;
+$sass-variables: $faded-red !default;
+$sass-operators: $blue-green !default;

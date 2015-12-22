@@ -50,35 +50,35 @@ $cursor: #fff;
 //========================================================================
 
 //====== Mono ======//
-$black: mono(0);
-$deep-black: mono(25);
-$mid-black: mono(55);
-$gray: mono(70);
-$highlight: mono(150);
-$white: mono(225);
-$bright-white: mono(255);
+$black: mono(0) !default;
+$deep-black: mono(25) !default;
+$mid-black: mono(55) !default;
+$gray: mono(70) !default;
+$highlight: mono(150) !default;
+$white: mono(225) !default;
+$bright-white: mono(255) !default;
 
 //====== Browns ======//
-$tan: #D6D7AF;
-$dark-tan: #544E44;
+$tan: #D6D7AF !default;
+$dark-tan: #544E44 !default;
 
 //====== Blues ======//
-$blue-green: #6FE0C2;
-$frost: rgb(195, 245, 255);
+$blue-green: #6FE0C2 !default;
+$frost: rgb(195, 245, 255) !default;
 
 //====== Reds ======//
 $red: #EE0F04;
-$faded-red: rgb(245, 100, 75);
-$error-red: rgb(150, 50, 50);
+$faded-red: rgb(245, 100, 75) !default;
+$error-red: rgb(150, 50, 50) !default;
 
 //====== Greens ======//
 $green: #abc837;
-$light-green: #CEDF99;
-$faded-green: #9F9D6D;
+$light-green: #CEDF99 !default;
+$faded-green: #9F9D6D !default;
 
 //====== Yellows ======//
-$yellow: #DFC47D;
-$orange: #e8bf6a;
+$yellow: #DFC47D !default;
+$orange: #e8bf6a !default;
 
 
 //========================================================================
@@ -242,32 +242,32 @@ $orange: #e8bf6a;
 }
 
 
-$css-selectors: $light-green;
+$css-selectors: $light-green !default;
 // .my-element, #myElement, div
-$css-psuedo-elements: $blue-green;
+$css-psuedo-elements: $blue-green !default;
 // :hover
-$css-important-tags: $red;
+$css-important-tags: $red !default;
 // ||:|| !important;
-$css-properties: $orange;
+$css-properties: $orange !default;
 // background: || ;
-$css-values: $green;
+$css-values: $green !default;
 // ||: rgb(0, 0, 0);
-$css-vendor-prefix: $tan;
+$css-vendor-prefix: $tan !default;
 // -webkit-border-radius
 // Check /scss/user-settings for options
-$css-variable-properties: $faded-red;
+$css-variable-properties: $faded-red !default;
 // Verdana, Arial, etc.
-$css-at-rules: $blue-green;
+$css-at-rules: $blue-green !default;
 // @media screen -AND- @if, @for for Sass/Less
-$css-strings: $green;
+$css-strings: $green !default;
 // "in between quotes"
-$css-integers: $green;
+$css-integers: $green !default;
 // 1, 2, 3, 4
-$css-comments: $gray;
+$css-comments: $gray !default;
 // This is a comment!
-$sass-variables: $faded-red;
+$sass-variables: $faded-red !default;
 // $mycolor: ||;
-$sass-operators: $blue-green;
+$sass-operators: $blue-green !default;
 // + - / = % ^
 
 //====================================
@@ -342,7 +342,81 @@ $sass-operators: $blue-green;
 //====================================
 
 .cm-m-javascript{
-
+    &.cm{
+        &-property{
+            color: $red;
+        }
+        &-tag{
+            color: $blue-green;
+        }
+        &-variable{
+            color: $tan;
+            &-2{
+                color: $white;
+            }
+            &-3{
+                color: $blue-green;
+            }
+        }
+        &-attribute{
+            color: $tan;
+        }
+        &-string{
+            color: $green;
+        }
+        &-def{
+            color: $blue-green;
+        }
+        &-hr {
+            color: #d68686;
+        }
+        &-number{
+            color: $green;
+        }
+        &-attribute{
+            color: $orange;
+        }
+        &-operator{
+            color: $white;
+        }
+        &-meta{
+            color: mono(100);
+        }
+        &-bracket{
+            color: $tan;
+        }
+        &-comment{
+            color: $gray;
+        }
+        &-minus {
+            color: $faded-red;
+        }
+        &-header {
+            color: #d85896;
+        }
+        &-link {
+            color: #b77fdb;
+            text-decoration: none;
+        }
+        &-rangeinfo {
+            color: #6c71c4;
+        }
+        &-keyword{
+            color: $tan;
+        }
+        &-builtin{
+            color: $light-green;
+        }
+        &-quote {
+            color: $tan;
+        }
+        &-qualifier{
+            color: $light-green;
+        }
+        &-regex{
+            color: #6c71c4;
+        }
+    }
 
 }// End JavaScript
 

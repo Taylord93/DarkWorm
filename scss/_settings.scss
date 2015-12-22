@@ -1,0 +1,109 @@
+//========================================================================
+//========================================================================
+//  Settings
+//========================================================================
+//========================================================================
+
+$html-active-line-change: true;
+// Change Colors on active line (HTML)
+$conform-style-script-tags: true;
+// Remove HTML Styling from inline script and style tags
+$style-vendor-prefix: true;
+// Special Styling for vendor prefixes
+$split-vendor-prefix: true;
+// Split vendor prefixes (-webkit-) and style seperately
+
+//========================================================================
+//========================================================================
+//  Color Pallete
+//========================================================================
+//========================================================================
+
+//====== Mono ======//
+$black: mono(0);
+$deep-black: mono(25);
+$mid-black: mono(55);
+$gray: mono(70);
+$highlight: mono(150);
+$white: mono(225);
+$bright-white: mono(255);
+$off-white: #f6f3e8;
+
+//====== Browns ======//
+$tan: #D6D7AF;
+$dark-tan: #544E44;
+
+//====== Blues ======//
+$blue-green: #6FE0C2;
+$frost: rgb(195, 245, 255);
+
+//====== Reds ======//
+$red: #EE0F04;
+$faded-red: rgb(245, 100, 75);
+$error-red: rgb(150, 50, 50);
+
+//====== Greens ======//
+$green: #abc837;
+$light-green: #CEDF99;
+$faded-green: #9F9D6D;
+
+//====== Yellows ======//
+$yellow: #DFC47D;
+$orange: #e8bf6a;
+
+
+
+
+//========================================================================
+//========================================================================
+//  Color Settings
+//========================================================================
+//========================================================================
+
+//=====================================//
+//    General / Editor
+//=====================================//
+
+$background: mono(22);
+$foreground: $off-white;
+$gutter: mono(20);
+$cursor: $bright-white;
+
+//=====================================//
+//    Generic
+//    (will be overridden for specific languages below)
+//=====================================//
+
+$css-selectors: $light-green;
+
+//=====================================//
+//    CSS
+//=====================================//
+
+$css-selectors: $light-green;
+// .my-element, #myElement, div
+$css-psuedo-elements: $blue-green;
+// :hover
+$css-important-tags: $red;
+// ||:|| !important;
+$css-properties: $orange;
+// background: || ;
+$css-values: $green;
+// ||: rgb(0, 0, 0);
+$css-vendor-prefix: $tan;
+// -webkit-border-radius
+// Check /scss/user-settings for options
+$css-variable-properties: $faded-red;
+// Verdana, Arial, etc.
+$css-at-rules: $blue-green;
+// @media screen -AND- @if, @for for Sass/Less
+$css-strings: $green;
+// "in between quotes"
+$css-integers: $green;
+// 1, 2, 3, 4
+$css-comments: $gray;
+// This is a comment!
+$sass-variables: $faded-red;
+// $mycolor: ||;
+$sass-operators: $blue-green;
+// + - / = % ^
